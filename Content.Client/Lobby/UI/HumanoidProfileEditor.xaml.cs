@@ -205,6 +205,16 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Age
+            
+            #region Umbra Leg Selector
+
+            LegSelectorButton.OnItemSelected += args =>
+            {
+                LegSelectorButton.SelectId(args.Id); // These need changed or something.
+                SetGender((Gender) args.Id);
+            };
+
+            #endregion Umbra Leg Selector
 
             #region Gender
 
